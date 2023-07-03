@@ -1,0 +1,57 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Learning_Razor_Pages
+build_property.RootNamespace = Learning_Razor_Pages
+build_property.ProjectDir = /home/almas/Desktop/CSharp Projects/Learning ASP.NET Core/Learning Razor Pages/
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /home/almas/Desktop/CSharp Projects/Learning ASP.NET Core/Learning Razor Pages
+build_property._RazorSourceGeneratorDebug = 
+
+[/home/almas/Desktop/CSharp Projects/Learning ASP.NET Core/Learning Razor Pages/Pages/Account/Account.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWNjb3VudC9BY2NvdW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/almas/Desktop/CSharp Projects/Learning ASP.NET Core/Learning Razor Pages/Pages/Bank/MyBank.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQmFuay9NeUJhbmsuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/almas/Desktop/CSharp Projects/Learning ASP.NET Core/Learning Razor Pages/Pages/Identity/LogIn.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSWRlbnRpdHkvTG9nSW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/almas/Desktop/CSharp Projects/Learning ASP.NET Core/Learning Razor Pages/Pages/Identity/SignUp.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSWRlbnRpdHkvU2lnblVwLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/almas/Desktop/CSharp Projects/Learning ASP.NET Core/Learning Razor Pages/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/almas/Desktop/CSharp Projects/Learning ASP.NET Core/Learning Razor Pages/Pages/Shared/_IdentityLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19JZGVudGl0eUxheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/almas/Desktop/CSharp Projects/Learning ASP.NET Core/Learning Razor Pages/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/almas/Desktop/CSharp Projects/Learning ASP.NET Core/Learning Razor Pages/Pages/Shared/_NavBar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19OYXZCYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/almas/Desktop/CSharp Projects/Learning ASP.NET Core/Learning Razor Pages/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/almas/Desktop/CSharp Projects/Learning ASP.NET Core/Learning Razor Pages/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

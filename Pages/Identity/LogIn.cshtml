@@ -1,0 +1,33 @@
+﻿@page
+@model Learning_Razor_Pages.LogInModel
+@{
+    Layout = "_IdentityLayout";
+    string? incorrectPassword = TempData["IncorrectPassword"] as string;
+    string? incorrectEmail = TempData["IncorrectEmail"] as string;
+}
+<main class="main-form mt30vh">
+    <h1>Log In</h1>
+    <form method="post">
+        <div class="post-message-box">
+            @if(!string.IsNullOrEmpty(incorrectEmail)){
+                <span>@incorrectEmail</span>
+            }
+            else if(!string.IsNullOrEmpty(incorrectPassword)){
+                <span>@incorrectPassword</span>
+            }
+        </div>
+        <div class="input-container">
+            <input type="email" asp-for="Email" required>
+            <label asp-for="Email"></label>
+            <span class="asp-validation" asp-validation-for="Email"></span>
+        </div>
+        <div class="input-container">
+            <input id="password" type="password" asp-for="Password" minlength="8" maxlength="32" required>
+            <label asp-for="Password"></label>
+            <span class="asp-validation" asp-validation-for="Password"></span>
+        </div>
+        <label id="pswd-toggle-desc" for="show-pswd" class="font-size1p3rem">Show password <input id="show-pswd" type="checkbox"></label>
+        <button class="main-btn btn display-block mt2vh" type="submit">Submit</button>
+    </form>
+    <p class="mt2vh font-size1rem">Don't have an account?<a asp-page="/Identity/SignUp"> Sign up!</a></p>
+</main>

@@ -1,0 +1,33 @@
+{
+  "Files": [
+    {
+      "Id": "/home/almas/Desktop/CSharp Projects/Learning ASP.NET Core/Learning Razor Pages/wwwroot/css/style.css",
+      "PackagePath": "staticwebassets/css/style.css"
+    },
+    {
+      "Id": "/home/almas/Desktop/CSharp Projects/Learning ASP.NET Core/Learning Razor Pages/wwwroot/scripts/MyBank.js",
+      "PackagePath": "staticwebassets/scripts/MyBank.js"
+    },
+    {
+      "Id": "/home/almas/Desktop/CSharp Projects/Learning ASP.NET Core/Learning Razor Pages/wwwroot/scripts/PasswordToggle.js",
+      "PackagePath": "staticwebassets/scripts/PasswordToggle.js"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.Learning Razor Pages.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.build.Learning Razor Pages.props",
+      "PackagePath": "build\\Learning Razor Pages.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.buildMultiTargeting.Learning Razor Pages.props",
+      "PackagePath": "buildMultiTargeting\\Learning Razor Pages.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.buildTransitive.Learning Razor Pages.props",
+      "PackagePath": "buildTransitive\\Learning Razor Pages.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

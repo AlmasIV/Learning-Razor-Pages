@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "Hash": "8sbGlQNcNWfpL6d21/AKKjDG/UtqL2dKTqxqbu6Htb8=",
+  "Source": "Learning Razor Pages",
+  "BasePath": "_content/Learning Razor Pages",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Learning Razor Pages/wwwroot",
+      "Source": "Learning Razor Pages",
+      "ContentRoot": "/home/almas/Desktop/CSharp Projects/Learning ASP.NET Core/Learning Razor Pages/wwwroot/",
+      "BasePath": "_content/Learning Razor Pages",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "/home/almas/Desktop/CSharp Projects/Learning ASP.NET Core/Learning Razor Pages/wwwroot/css/style.css",
+      "SourceId": "Learning Razor Pages",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/almas/Desktop/CSharp Projects/Learning ASP.NET Core/Learning Razor Pages/wwwroot/",
+      "BasePath": "_content/Learning Razor Pages",
+      "RelativePath": "css/style.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/style.css"
+    },
+    {
+      "Identity": "/home/almas/Desktop/CSharp Projects/Learning ASP.NET Core/Learning Razor Pages/wwwroot/scripts/MyBank.js",
+      "SourceId": "Learning Razor Pages",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/almas/Desktop/CSharp Projects/Learning ASP.NET Core/Learning Razor Pages/wwwroot/",
+      "BasePath": "_content/Learning Razor Pages",
+      "RelativePath": "scripts/MyBank.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/scripts/MyBank.js"
+    },
+    {
+      "Identity": "/home/almas/Desktop/CSharp Projects/Learning ASP.NET Core/Learning Razor Pages/wwwroot/scripts/PasswordToggle.js",
+      "SourceId": "Learning Razor Pages",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/almas/Desktop/CSharp Projects/Learning ASP.NET Core/Learning Razor Pages/wwwroot/",
+      "BasePath": "_content/Learning Razor Pages",
+      "RelativePath": "scripts/PasswordToggle.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/scripts/PasswordToggle.js"
+    }
+  ]
+}

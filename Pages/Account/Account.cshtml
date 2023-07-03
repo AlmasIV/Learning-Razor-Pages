@@ -1,0 +1,33 @@
+﻿@page
+@using Learning_Razor_Pages.Model;
+@model Learning_Razor_Pages.AccountModel
+@{
+    User user = Model.user;
+}
+<main id="account-main" class="flex flex-column main-form font-size1p3rem">
+    <div class="post-message-box mt5vh"></div>
+    <div>
+        <span><span class="field-name">Name:</span> @user.Name</span>
+        <hr>
+    </div>
+    <div>
+        <span><span class="field-name">Surname:</span> @user.Surname</span>
+        <hr>
+    </div>
+    <div>
+        <span><span class="field-name">Age:</span> @user.Age</span>
+        <hr>
+    </div>
+    <div>
+        <span><span class="field-name">Email:</span> @user.Email</span>
+        <hr>
+    </div>
+    <div>
+        <span><span class="field-name">Phone Number:</span> @user.PhoneNumber</span>
+        <hr>
+    </div>
+    <div>
+        <span><span class="field-name">Password:</span> @user.Password</span>
+        <hr>
+    </div>
+</main>

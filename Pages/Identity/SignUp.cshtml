@@ -1,0 +1,54 @@
+﻿@page
+@model Learning_Razor_Pages.SignUpModel
+@{
+    Layout = "_IdentityLayout";
+    var user = Model.user;
+    string? emailExists = TempData["EmailExists"] as string;
+    string? phoneExists = TempData["PhoneExists"] as string;
+}
+<main class="main-form mt10vh">
+    <h1>Sign Up</h1>
+    <form method="post">
+        <div class="post-message-box">
+            @if(!string.IsNullOrEmpty(emailExists)){
+                <span>@emailExists</span>
+            }
+            @if(!string.IsNullOrEmpty(phoneExists)){
+                <span>@phoneExists</span>
+            }
+        </div>
+        <div class="input-container">
+            <input type="text" asp-for="user.Name" minlength="2" maxlength="20" required>
+            <label asp-for="user.Name"></label>
+            <span class="asp-validation" asp-validation-for="user.Name"></span>
+        </div>
+        <div class="input-container">
+            <input type="text" asp-for="user.Surname" minlength="2" maxlength="20" required>
+            <label asp-for="user.Surname"></label>
+            <span class="asp-validation" asp-validation-for="user.Surname"></span>
+        </div>
+        <div class="input-container">
+            <input type="email" asp-for="user.Email" required>
+            <label asp-for="user.Email"></label>
+            <span class="asp-validation" asp-validation-for="user.Email"></span>
+        </div>
+        <div class="input-container">
+            <input type="text" asp-for="user.PhoneNumber" minlength="3" maxlength="15" required>
+            <label asp-for="user.PhoneNumber"></label>
+            <span class="asp-validation" asp-validation-for="user.PhoneNumber"></span>
+        </div>
+        <div class="input-container">
+            <input type="number" asp-for="user.Age" min="16" max="100" required>
+            <label asp-for="user.Age"></label>
+            <span class="asp-validation" asp-validation-for="user.Age"></span>
+        </div>
+        <div class="input-container">
+            <input id="password" type="password" asp-for="user.Password" minlength="8" maxlength="32" required>
+            <label class="input-label" asp-for="user.Password"></label>
+            <span class="asp-validation" asp-validation-for="user.Password"></span>
+        </div>
+        <label id="pswd-toggle-desc" for="show-pswd" class="font-size1p3rem">Show password <input id="show-pswd" type="checkbox"></label>
+        <button class="main-btn btn display-block mt2vh" type="submit">Submit</button>
+    </form>
+    <p class="mt2vh font-size1rem">Already have an account?<a asp-page="/Identity/LogIn"> Log In!</a></p>
+</main>

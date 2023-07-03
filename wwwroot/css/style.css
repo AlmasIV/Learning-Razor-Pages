@@ -1,0 +1,205 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+html {
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+.a-minimal {
+    color: inherit;
+}
+.a-minimal:visited {
+    color: inherit;
+}
+/* Navigation Header */
+.nav-bar {
+    width: 100%;
+    height: 5vh;
+    display: flex;
+}
+.nav-bar a {
+    flex-grow: 1;
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-size: 1.2rem;
+    transition: 0.5s;
+}
+.nav-bar a:hover {
+    background-color: white;
+    color: black;
+}
+.pt2vw {
+    padding-top: 2vw;
+}
+.p2vw {
+    padding: 2vw;
+}
+
+/* Identity Styles */
+.main-form {
+    width: 50vw;
+    min-height: 100vh;
+    margin: auto;
+}
+.mt30vh {
+    margin-top: 30vh;
+}
+.mt10vh{
+    margin-top: 10vh;
+}
+.mt5vh {
+    margin-top: 5vh;
+}
+.mt2vh {
+    margin-top: 2vh;
+}
+.mb2vh {
+    margin-bottom: 2vh;
+}
+.input-container {
+    min-height: 3.6rem;
+    position: relative;
+}
+.input-container label {
+    position: absolute;
+    top: -0.2vw;
+    left: 0;
+    font-size: 1.3rem;
+    pointer-events: none;
+    transition: 0.5s all ease-in-out;
+}
+.input-container input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 1.3rem;
+    border-bottom: 0.1vw solid black;
+}
+.input-container input:focus ~ label,
+.input-container input:valid ~ label {
+    top: -1.3rem;
+    font-size: 1rem;
+    opacity: 0.5;
+}
+.asp-validation {
+    color: red;
+    display: block;
+    margin: 2vh 0 4vh;
+}
+.post-message-box {
+    margin-bottom: 5vh;
+}
+.post-message-box span {
+    color: red;
+    display: block;
+}
+.btn {
+    padding: 1vw;
+    font-size: 1.1rem;
+    border-radius: 0.2vw;
+    transition: 0.3s all linear;
+}
+.main-btn {
+    border: 0.1vw black solid;
+    transition: 0.3s all linear;
+}
+.main-btn:hover {
+    background-color: black;
+    color: rgb(205, 255, 130);
+}
+.font-size1p3rem {
+    font-size: 1.3rem;
+}
+.font-size1rem {
+    font-size: 1rem;
+}
+
+/* Password mechanism */
+#show-pswd {
+    width: 1rem;
+    height: 1rem;
+}
+.display-block {
+    display: block;
+}
+
+/* My Bank Styles */
+.text-center {
+    text-align: center;
+}
+.flex {
+    display: flex;
+}
+.flex-column {
+    flex-direction: column;
+}
+.special-btn {
+    border: 0.2vw solid black;
+    padding: 2vw;
+    transition: 0.5s;
+    position: relative;
+}
+.special-btn:hover {
+    background-color: black;
+    color: white;
+    left: -2vw;
+}
+.special-submit-btn {
+    transition: 0.5s;
+    width: 100%;
+    padding: 0.5vw;
+    background-color: black;
+    color: white;
+    border: none;
+}
+.special-submit-btn:hover {
+    background-color: white;
+    color: black;
+    outline: 0.2vw solid black;
+}
+/* History Box */
+#historyBox {
+    display: none;
+    max-height: 50vh;
+    overflow-y: auto;
+}
+.replenishment-msg {
+    color: rgb(41, 150, 41);
+}
+.withdrawal-msg {
+    color: red;
+}
+.transfer-msg {
+    color: blue;
+}
+.replenishment-msg:hover, .withdrawal-msg:hover, .transfer-msg:hover {
+    font-size: 1.5rem;
+}
+/* Replenish Form */
+#replenishForm {
+    display: none;
+}
+
+/* Withdraw Form */
+#withdrawForm {
+    display: none;
+}
+
+/* Transfer Form */
+#transferForm {
+    display: none;
+}
+
+/* Account style */
+.field-name {
+    font-weight: bold;
+}
+
+#account-main div {
+    margin-bottom: 4vh;
+}

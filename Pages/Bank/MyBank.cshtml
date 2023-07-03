@@ -1,0 +1,98 @@
+﻿@page
+
+@using Learning_Razor_Pages.Model.HistoryOfBank;
+
+@model Learning_Razor_Pages.MyBankModel
+@{
+    string? notEnough = TempData["NotEnough"] as string;
+    string? receiverNull = TempData["ReceiverNull"] as string;
+    string? noSuchUser = TempData["NoSuchUser"] as string;
+    string? yourOwnEmail = TempData["YourOwnEmail"] as string;
+
+    List<HistoryOfBank>? history = Model.History;
+}
+<main class="flex main-form flex-column mb2vh">
+    <div class="post-message-box mt5vh">
+        @if(!string.IsNullOrEmpty(receiverNull)){
+            <span>@receiverNull</span>
+        }
+        @if(!string.IsNullOrEmpty(noSuchUser)){
+            <span>@noSuchUser</span>
+        }
+        @if(!string.IsNullOrEmpty(yourOwnEmail)){
+            <span>@yourOwnEmail</span>
+        }
+        @if(!string.IsNullOrEmpty(notEnough)){
+            <span>@notEnough</span>
+        }
+    </div>
+    <div class="text-center mt2vh special-btn a-minimal" onclick="ShowHistory()">
+        <h1>My Bank: @Model.Balance&#8376;</h1>
+    </div>
+    <div id="historyBox" class="text-center">
+        @if(history is not null){
+            foreach(HistoryOfBank h in history){
+                if(h.OperationType == "Replenishment"){
+                    <span class="display-block replenishment-msg">@h.DateOfOperation - @h.OperationType - @h.Amount</span>
+                }
+                else if(h.OperationType == "Withdrawal"){
+                    <span class="display-block withdrawal-msg">@h.DateOfOperation - @h.OperationType - @h.Amount</span>
+                }
+                else{
+                    <span class="display-block transfer-msg">Sender: @h.FromWhom; Receiver: @h.ToWhom; Date: @h.DateOfOperation; Amount: @h.Amount</span>
+                }
+            }
+        }
+    </div>
+
+    <div id="replenishBox" class="text-center mt2vh special-btn a-minimal" onclick="Replenish()">
+        <h2>Replenish Money</h2>
+    </div>
+    <div id="replenishForm">
+        <div class="input-container">
+            <form class="mt5vh" asp-page-handler="ReplenishMoney" method="post">
+                <input asp-for="Amount" min="100.00" max="999999999999999.99" type="number" step="1" required value="">
+                <label asp-for="Amount"></label>
+                <span class="asp-validation" asp-validation-for="Amount"></span>
+                <button class="special-submit-btn font-size1p3rem" type="submit">Replenish</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="withdrawBox" class="text-center mt2vh special-btn a-minimal" onclick="Withdraw()">
+        <h2>Withdraw Money</h2>
+    </div>
+    <div id="withdrawForm">
+        <div class="input-container">
+            <form class="mt5vh" asp-page-handler="WithdrawMoney" method="post">
+                <input asp-for="Amount" min="100.00" max="999999999999999.99" type="number" step="1" required value="">
+                <label asp-for="Amount"></label>
+                <span class="asp-validation" asp-validation-for="Amount"></span>
+                <button class="special-submit-btn font-size1p3rem" type="submit">Withdraw</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="transferBox" class="text-center mt2vh special-btn a-minimal" onclick="Transfer()">
+        <h2>Transfer Money</h2>
+    </div>
+    <div id="transferForm">
+        <form class="mt5vh" asp-page-handler="TransferMoney" method="post">
+            <div class="post-message-box mt5vh">
+
+            </div>
+            <div class="input-container">
+                <input name="toWhom" type="email" required>
+                <label>Email of the receiver</label>
+            </div>
+            <div class="input-container">
+                <input asp-for="Amount" min="100.00" max="999999999999999.99" type="number" step="1" required value="">
+                <label asp-for="Amount"></label>
+                <span class="asp-validation" asp-validation-for="Amount"></span>
+                <button class="special-submit-btn font-size1p3rem" type="submit">Transfer</button>
+            </div>
+        </form>
+    </div>
+</main>
+
+<script src="~/scripts/MyBank.js" defer></script>
